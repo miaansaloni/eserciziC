@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/controllo_di_flusso/maggiore_dei_3",
+            "program": "${workspaceFolder}/puntatori/assegnamento",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",

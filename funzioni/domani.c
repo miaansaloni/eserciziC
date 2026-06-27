@@ -27,6 +27,7 @@ int valida(int G, int M, int A){
 int main(void) {
   int G, M, A;
 
+  printf("Inserire una data:\n");
   scanf("%d%d%d", &G, &M, &A);
 
   if(!valida(G, M, A)){
