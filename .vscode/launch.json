@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/puntatori/assegnamento",
+            "program": "${workspaceFolder}/puntatori/azzera",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
