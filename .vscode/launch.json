@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/stringhe/copia",
+            "program": "${workspaceFolder}/strutture/compleanno",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
