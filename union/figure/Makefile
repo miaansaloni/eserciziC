@@ -1,5 +1,5 @@
 figure: main.o figura.o
-	gcc -g -o figure main.o figura.o
+	gcc -g -o figure main.o figura.o -lm
 
 main.o: main.c figura.h
 	gcc -g -c main.c
