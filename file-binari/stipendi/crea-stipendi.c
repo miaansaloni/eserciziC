@@ -2,12 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
-typedef struct
-{
-    char nome[22];
-    float stipendio;
-} Dipendente;
+#include "dipendente.h"
 
 int main() 
 {

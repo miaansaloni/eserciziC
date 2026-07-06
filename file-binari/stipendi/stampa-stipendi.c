@@ -1,14 +1,8 @@
 // questo programma deve creare il file binario stipendi.dat
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
+#include "dipendente.h"
 #define DIM 100
-
-typedef struct
-{
-    char nome[22];
-    float stipendio;
-} Dipendente;
 
 int main()
 {
