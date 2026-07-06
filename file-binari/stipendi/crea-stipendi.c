@@ -9,7 +9,7 @@ typedef struct
     float stipendio;
 } Dipendente;
 
-int main()
+int main() 
 {
     // inizializzazione di un array di struct sia array che struct si inizializzano con le graffe
     Dipendente dipendenti[5] = {{"Rossi", 1750.0},
