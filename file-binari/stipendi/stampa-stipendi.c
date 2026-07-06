@@ -1,17 +1,22 @@
-// questo programma deve creare il file binario stipendi.dat
 #include <stdio.h>
 #include <stdlib.h>
 #include "dipendente.h"
 #define DIM 100
 
-int main()
+int main(int argc, char *argv[])
 {
     Dipendente dipendenti[DIM];
     int dl, i;
 
     FILE *pf;
 
-    if ((pf = fopen("stipendi.dat", "rb")) == NULL)
+    if (argc != 2)
+    {
+        printf("Uso: %s nome_file\n", argv[0]);
+        exit(3);
+    }
+
+    if ((pf = fopen(argv[1], "rb")) == NULL)
     {
         printf("Errore apertura\n");
         exit(1);

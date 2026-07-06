@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include "dipendente.h"
 
-int main()
+int main(int argc, char *argv[])
 {
     FILE *pf;
     Dipendente d; // Riserva un'area di memoria consecutiva nello stack per contenere i campi di un record Dipendente
@@ -16,7 +16,13 @@ int main()
       - 'r+': apertura in lettura e scrittura (aggiornamento). Il file deve esistere
       - 'b': modalità binaria; i dati sono trattati come pura sequenza di byte (rappresentazione interna)*/
 
-    if ((pf = fopen("stipendi.dat", "r+b")) == NULL)
+    if (argc != 2)
+    {
+        printf("Uso: %s nome_file\n", argv[0]);
+        exit(3);
+    }
+
+    if ((pf = fopen(argv[1], "r+b")) == NULL)
     {
         printf("Errore apertura file\n");
         exit(1);

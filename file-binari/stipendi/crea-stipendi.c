@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include "dipendente.h"
 
-int main() 
+int main(int argc, char *argv[])
 {
     // inizializzazione di un array di struct sia array che struct si inizializzano con le graffe
     Dipendente dipendenti[5] = {{"Rossi", 1750.0},
@@ -15,7 +15,13 @@ int main()
 
     FILE *pf;
 
-    if ((pf = fopen("stipendi.dat", "wb")) == NULL)
+    if (argc != 2)
+    {
+        printf("Uso: %s nome_file\n", argv[0]);
+        exit(3);
+    }
+
+    if ((pf = fopen(argv[1], "wb")) == NULL)
     {
         printf("Errore apertura\n");
         exit(1);
