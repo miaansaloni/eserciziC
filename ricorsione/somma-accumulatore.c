@@ -7,7 +7,7 @@ int s(int N, int p)
         return p;
     }
     else
-        return s(N - 1, N + p);
+        return s(N - 1, N + p); // tail recursion
 }
 
 int main()
