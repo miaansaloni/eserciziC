@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/strutture/compleanno",
+            "program": "${workspaceFolder}/vettori-multidimensionali/identita-arg",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
