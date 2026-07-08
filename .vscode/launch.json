@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/vettori-multidimensionali/identita-arg",
+            "program": "${workspaceFolder}/liste-collegate/lunghezzaLista/lunghezza",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
