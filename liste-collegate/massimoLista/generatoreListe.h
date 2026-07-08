@@ -1,0 +1,1 @@
+void listaNonOrdinata(Lista *pl, int n);
