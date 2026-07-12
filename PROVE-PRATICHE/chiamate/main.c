@@ -17,6 +17,8 @@ int main(int argc, char *argv[])
         printf("Uso: %s utenti.dat chiamate.txt\n", argv[0]);
         exit(1);
     }
+    // creazione nuova lista
+    nuovaLista(&l);
 
     // apertura in lettura del file binario
     pfb = fopen(argv[1], "rb");
@@ -26,8 +28,6 @@ int main(int argc, char *argv[])
         exit(2);
     }
 
-    // creazione nuova lista
-    nuovaLista(&l);
     // iterazione sugli elementi del file binario e inserimento in testa alla nuova lista
     while (fread(&u, sizeof(Utente), 1, pfb) == 1)
     {

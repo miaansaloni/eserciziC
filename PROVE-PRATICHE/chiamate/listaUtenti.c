@@ -46,7 +46,7 @@ void stampa(Lista l)
 {
     while (l != NULL)
     {
-        printf("%c %.2f\n", l->dato.numero, l->dato.credito);
+        printf("%s %.2f\n", l->dato.numero, l->dato.credito);
         l = l->next;
     }
 }
