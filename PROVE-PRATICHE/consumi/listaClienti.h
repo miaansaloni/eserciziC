@@ -1,21 +1,27 @@
-typedef struct{
+typedef struct
+{
     int mese;
     int anno;
     char cf[17];
     float consumo;
-}Record;
+} Record;
 
-typedef struct{
+typedef struct
+{
     char cf[17];
     float consumoTotale;
     float addebitoTotale;
-}Dato;
+} Dato;
 
-typedef struct nodo{
+typedef struct nodo
+{
     Dato dato;
     struct nodo *next;
-}Nodo;
+} Nodo;
 
 typedef Nodo *Lista;
 
 void nuovaLista(Lista *l);
+void insTesta(Lista *l, Dato d);
+void aggiorna(Lista *pl, Record r);
+void stampa(Lista l);

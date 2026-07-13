@@ -5,6 +5,8 @@
 int main(int argc, char *argv[])
 {
     FILE *pfb;
+    Lista l;
+    Dato d;
 
     if (argc != 2)
     {
@@ -13,7 +15,17 @@ int main(int argc, char *argv[])
     }
 
     pfb = fopen(argv[1], "rb");
-    
+    if (pfb == NULL)
+    {
+        printf("Errore aperturafile %s\n", argv[1]);
+    }
+
+    nuovaLista(&l);
+    while (fread(&d, sizeof(Dato), 1, pfb) == 1)
+    {
+        insTesta(&l, d);
+    }
+    fclose(pfb);
 
     return 0;
 }
