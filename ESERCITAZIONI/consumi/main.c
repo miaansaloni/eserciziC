@@ -6,6 +6,7 @@ int main(int argc, char *argv[])
 {
     FILE *pf;
     Lista l;
+    ListaT lt;
     Record r;
 
     if (argc != 2)
@@ -22,14 +23,17 @@ int main(int argc, char *argv[])
     }
 
     nuovaLista(&l);
+    lt = NULL;
 
     while (fread(&r, sizeof(Record), 1, pf) == 1)
     {
         aggiorna(&l, r);
+        aggiornaTotale(&lt, r);
     }
     fclose(pf);
 
     stampa(l);
+    stampaTotale(lt);
 
     return 0;
 }
