@@ -1,5 +1,4 @@
-
-typedef struct // campi del file binario
+typedef struct
 {
     int mese;
     int anno;
@@ -7,11 +6,11 @@ typedef struct // campi del file binario
     float consumo;
 } Record;
 
-typedef struct // elemeto cliente della lista
+typedef struct
 {
     char cf[17];
     float consumoTotale;
-    float importoTotale;
+    float imprtoTotale;
 } Dato;
 
 typedef struct nodo
@@ -22,7 +21,6 @@ typedef struct nodo
 
 typedef Nodo *Lista;
 
-void nuovaLista(Lista *l);
-void insTesta(Lista *l, Dato d);
+void nuovaLista(Lista *pl);
+void aggiorna(Lista *pl, Record r);
 void stampa(Lista l);
-void aggiorna(Lista *l, Record r);
